@@ -86,7 +86,7 @@ chown -R 1000:1000 ${MOUNTDIR}/home/pi/
 
 # Fetch from git
 cd ${MOUNTDIR}/root
-git clone https://github.com/DFRI/dfri-rpi-tor.git > /dev/null 2>&1
+git clone https://github.com/ln5/dfri-rpi-tor.git > /dev/null 2>&1
 
 # Create symlink 
 cd ${MOUNTDIR}/root
