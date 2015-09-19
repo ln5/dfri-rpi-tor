@@ -13,6 +13,9 @@ if [ "$(stat -c %U /usr/local/var/lib/tor)" != "tor" ]
 then
   chown -R tor:tor /usr/local/var/lib/tor /usr/local/etc/tor
 fi
+chown -R tor:adm /var/log/tor
+chmod 2750 /var/log/tor
+chmod 640 /var/log/tor/*
 
 if [ -f /usr/bin/tor ]
 then
