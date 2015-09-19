@@ -16,7 +16,7 @@ if [ -d /root/dfri-rpi-tor ]
 then
   mv dfri-rpi-tor dfri-rpi-tor-saved
 fi
-git clone https://github.com/ln5/dfri-rpi-tor.git
+git clone --branch ln5 https://github.com/ln5/dfri-rpi-tor.git
 if [ $? -eq 0 ]
 then
   rm -rf dfri-rpi-tor-saved
